@@ -1,6 +1,6 @@
 # Neovim Starter Kit for Python 🕹⚡🐍 #
 
-This is a variant of the normal [Neovim Starter Kit](https://github.com/bcampolo/nvim-starter-kit) specialized for Python development.
+This is a variant of the normal [Neovim Starter Kit](https://github.com/bcampolo/nvim-starter-kit) specialized for Go development.
 
 This is my personalized Neovim Starter Kit.  IMO it is a very well structured, clean configuration for getting started with Neovim.  It uses the [lazy.nvim](https://github.com/folke/lazy.nvim) package manager, which allows plugins to be added simply by dropping a plugin spec file into your plugins folder.  Each plugin file in my configuration is well commented and you can remove any plugin file that you don't need or want.  A lot of Neovim users recommend kickstart.nvim, which I agree is a great resource due to its simplicity, but I believe this Starter Kit directory structure is much easier to maintain in the long run.
 
@@ -38,7 +38,7 @@ This is my personalized Neovim Starter Kit.  IMO it is a very well structured, c
 
 > **NOTE:** 
 > I do all of my development on a Debian/Ubuntu based Linux distro, so while most of this README will still work on other operating systems, it is geared towards my own dev environment.
-> If you are using a Mac, your mileage may vary (you Kool-Aid-drinking, hipster Apple fanboi).
+> If you are using a Mac, your mileage may vary.
 > If you are using Windows, I'll see you in Hell!
 
 ********************************************************************************
@@ -67,7 +67,7 @@ After installing all of the prerequisites, you can start Neovim by running `nvim
     mkdir ~/git
     cd ~/git
     # Clone Starter Kit into your git directory
-    git clone https://github.com/bcampolo/nvim-starter-kit
+    git clone https://github.com/kernel-krunch/nvim-starter-kit
     # Switch to the python branch
     git checkout python
     # Make the Neovim configuration directory
