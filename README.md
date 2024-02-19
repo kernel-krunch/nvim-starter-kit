@@ -24,21 +24,14 @@ This is my personalized Neovim Starter Kit.  IMO it is a very well structured, c
 - [ripgrep](https://github.com/BurntSushi/ripgrep) - Needed for Telescope Fuzzy Finder
 - [xclip](https://linuxconfig.org/how-to-use-xclip-on-linux) - Needed for system clipboard support
 - [npm/node](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
-- [Python](https://www.python.org/) - Version 3.8 or later
 
 ## Optional ##
-- **TMUX**
-    - TMUX is a way to organize multiple terminal sessions, windows and panels and works very nicely in conjunction with Neovim.
-    - I've included my TMUX configuration file in this repo as well [.tmux.conf](.tmux.conf)
 - **SHELL SETTINGS**
-    - This will set your terminal to use vim motions.  You can put it in your ~/.bashrc or similar file:
-        `set -o vi`
-
+ I am using zellij instead of tmux. zellij is totally awesome! Check it out here: https://zellij.dev/ 
 ********************************************************************************
 
 > **NOTE:** 
-> I do all of my development on a Debian/Ubuntu based Linux distro, so while most of this README will still work on other operating systems, it is geared towards my own dev environment.
-> If you are using a Mac, your mileage may vary (you Kool-Aid-drinking, hipster Apple fanboi).
+> I do all of my development on a Mac, so while most of this README will still work on other operating systems, it is geared towards my own dev environment.
 > If you are using Windows, I'll see you in Hell!
 
 ********************************************************************************
@@ -67,9 +60,7 @@ After installing all of the prerequisites, you can start Neovim by running `nvim
     mkdir ~/git
     cd ~/git
     # Clone Starter Kit into your git directory
-    git clone https://github.com/bcampolo/nvim-starter-kit
-    # Switch to the python branch
-    git checkout python
+    git clone https://github.com/kernel-krunch/nvim-starter-kit
     # Make the Neovim configuration directory
     mkdir -p ~/.config/nvim
     # Copy the Starter Kit Neovim configuration to your Neovim configuration
@@ -105,8 +96,7 @@ After installing all of the prerequisites, you can start Neovim by running `nvim
 │       │   └── plugins
 │       │       ├── autopairs.lua               # Plugins can be added / removed from Neovim by
 │       │       ├── ...                         # adding / removing plugin files to this directory
-│       │       └── vim-tmux-navigator.lua
-│       ├── init.lua                            # This is the main Neovim configuration file
+├── init.lua                            # This is the main Neovim configuration file
 │       └── lazy-lock.json                      # This locks your plugins to specific versions/commits
 ├── .mime.types                                 # Fixes a Linux/Firefox issue to view local markdown (optional)
 └── .tmux.conf                                  # This is my tmux configuration (optional)
@@ -118,6 +108,10 @@ After installing all of the prerequisites, you can start Neovim by running `nvim
 
 ## Suggestions / Pull Requests ##
 If you run into any issues or have any suggestions for plugins that you feel should be part of the Starter Kit, open a PR that includes the updates and I'll review/merge it as soon as I can.
+
+
+## Special Thanks ##
+Special thanks to bcampolo who's work this is based on. You can find the links to his projects below.
 
 ## Starter Kit Variants ##
 - [Neovim Starter Kit](https://github.com/bcampolo/nvim-starter-kit)
